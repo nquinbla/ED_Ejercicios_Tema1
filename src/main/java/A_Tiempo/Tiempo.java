@@ -12,7 +12,7 @@ public class Tiempo {
         int days = 3;
 
         long totalSeconds = calculateSeconds(years, months, days, daysInYear, hoursInDay, minutesInHour, secondsInMinute);
-        System.out.println("Total seconds: " + totalSeconds);
+        System.out.println("Total de segundos que hay en un año " + totalSeconds);
     }
 
     public static long calculateSeconds(int years, int months, int days, short daysInYear, short hoursInDay, short minutesInHour, short secondsInMinute) {
