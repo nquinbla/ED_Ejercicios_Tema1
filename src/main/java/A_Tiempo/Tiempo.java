@@ -1,3 +1,5 @@
+package A_Tiempo;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
