@@ -1,24 +1,32 @@
-package A_Tiempo;
-
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Tiempo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese el año (0-2025): ");
-        int year = scanner.nextInt();
+        int year = 0;
+        int months = 0;
+        int days = 0;
+
+        try {
+            System.out.println("Ingrese el año (0-2025): ");
+            year = scanner.nextInt();
+
+            System.out.println("Ingrese el número de meses: ");
+            months = scanner.nextInt();
+
+            System.out.println("Ingrese el número de días: ");
+            days = scanner.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("Por favor, ingrese un número válido.");
+            return;
+        }
 
         short daysInYear = isLeapYear(year) ? (short) 366 : (short) 365;
         short hoursInDay = 24;
         short minutesInHour = 60;
         short secondsInMinute = 60;
-
-        System.out.println("Ingrese el número de meses: ");
-        int months = scanner.nextInt();
-
-        System.out.println("Ingrese el número de días: ");
-        int days = scanner.nextInt();
 
         long totalSeconds = calculateSeconds(year, months, days, daysInYear, hoursInDay, minutesInHour, secondsInMinute);
         System.out.println("Total de segundos: " + totalSeconds);
