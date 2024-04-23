@@ -13,9 +13,6 @@ public class Tiempo {
 
         long totalSeconds = calculateSeconds(years, months, days, daysInYear, hoursInDay, minutesInHour, secondsInMinute);
         System.out.println("Total seconds: " + totalSeconds);
-
-        long totalDays = calculateDays(years, months, days, daysInYear);
-        System.out.println("Total days: " + totalDays);
     }
 
     public static long calculateSeconds(int years, int months, int days, short daysInYear, short hoursInDay, short minutesInHour, short secondsInMinute) {
@@ -25,7 +22,4 @@ public class Tiempo {
         return totalMinutes * secondsInMinute;
     }
 
-    public static long calculateDays(int years, int months, int days, short daysInYear) {
-        return years * daysInYear + months * 30 + days;
-    }
 }
