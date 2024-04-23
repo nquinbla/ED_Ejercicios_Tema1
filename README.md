@@ -3,6 +3,18 @@ Ejercicios de la Unidad 1 de Nerea Quintanilla Blanco
 
 LINK 1 -> https://github.com/nquinbla/ED_Ejercicios_Tema1.git
 
+------------------------------------------------------------------
+
+[LINK 2] -> https://github.com/nquinbla/ED_Ejercicios_Tema2.git
+
+[LINK 3] -> https://github.com/nquinbla/ED_Ejercicios_Tema3.git
+
+[LINK 5] -> https://github.com/nquinbla/ED_Ejercicios_Tema5.git
+
+[LINK 6] -> https://github.com/nquinbla/ED_Ejercicios_Tema6.git
+
+------------------------------------------------------------------
+
 ### [A] (5 minutos) 
 Escribir un programa que defina variables que representen el
 número de días de un año, el número de horas que tiene un día, el número de
